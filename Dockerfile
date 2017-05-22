@@ -7,6 +7,7 @@ RUN apk update \
 RUN curl https://glide.sh/get | sh
 
 # install golang tools
+RUN go get -u gopkg.in/alecthomas/gometalinter.v1
 RUN go get -u github.com/golang/lint/golint
 RUN go get -u github.com/mattn/goveralls
 

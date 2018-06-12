@@ -1,4 +1,4 @@
-FROM golang:1.10.0-alpine
+FROM golang:1.10.3-alpine
 
 RUN apk update \
   && apk add git make curl perl bash build-base && rm -rf /var/cache/apk/*
